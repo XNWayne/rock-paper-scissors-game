@@ -1,0 +1,154 @@
+/* =========== */
+/* Font-Family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #182142;
+    color: white;
+}
+
+h1,
+h2,
+p,
+span {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid rgba(196, 193, 193, 0.5);
+    border-radius: 10px;
+    padding: .8rem 1.8rem;
+    margin-top: 2rem;
+    margin-inline: auto;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: .02rem;
+}
+
+.header h1 span {
+    display: block;
+}
+
+.header .score {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem 2rem;
+    border-radius: 10px;
+}
+
+.header .score h2 {
+    color: rgba(128, 128, 128, 0.708);
+    font-size: 1.3rem;
+}
+
+.header .score #score {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.game-area {
+    width: 40rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-inline: auto;
+}
+
+.game-area button {
+    background-color: transparent;
+    border: none;
+}
+
+.game-area #rock {
+    margin-right: 5rem;
+}
+
+.game-area #scissors {
+    margin-top: 2rem;
+}
+
+img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.results {
+    width: 50rem;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.results h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+.results span{
+    margin-top: 2rem;
+}
+
+.results button {
+    font: inherit;
+    font-size: 2rem;
+    border: 1px solid #182142;
+    background-color: white;
+    border-radius: 10px;
+    padding: .6rem 1.2rem;
+    color: #182142;
+}
+
+.results button:hover {
+    border: 2px solid white;
+    background-color: #182142;
+    color: white;
+}
+
+.results .result h2 {
+    font-size: 3.5rem;
+}
+
+@media (max-width: 680px) {
+    .results {
+        width: 40rem;
+    }
+
+    .results .result button {
+        position: fixed;
+        top: 40%;
+        left: 35%;
+        right: 35%;
+    }
+
+    .results .result h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-inline: auto;
+    }
+     
+}
