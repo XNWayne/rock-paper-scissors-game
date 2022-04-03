@@ -141,8 +141,8 @@ img {
     .results .result button {
         position: fixed;
         top: 40%;
-        left: 35%;
-        right: 35%;
+        left: 40%;
+        right: 40%;
     }
 
     .results .result h2 {
